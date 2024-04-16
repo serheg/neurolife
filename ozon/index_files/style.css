@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  background-image: url(./images/tild3831-6230-4432-a239-333332616634__fds_463308.jpg);
+}
+
+.intro-left > h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.intro-left > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.intro-left > p {
+  font-size: 18px;
+  color: #444;
+}
+
+.intro-left > ol > li {
+  font-size: 18px;
+  font-weight: 200;
+  color: #444;
+  width: 340px;
+}
+
+.intro-left > ol > li > b {
+  color: black;
+}
+
+.intro-left > button {
+  width: 240px;
+  height: 60px;
+  background: green;
+  color: aliceblue;
+  border: none;
+  font-size: 30px;
+}
+
+.intro-right > img {
+  width: 370px;
+  /* margin-left: 100px; */
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about div {
+  position: relative;
+}
+
+.about div > span {
+  position: absolute;
+  top: -140%;
+  right: 40%;
+  font-size: 200px;
+  font-weight: 600;
+  color: #ccc;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.about div > h1 {
+  font-size: 25px !important;
+  margin-bottom: 10px;
+  z-index: 999 !important;
+}
+
+.about div > p {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+  max-width: 700px;
+  width: 95%;
+  color: #444;
+}
+
+.about > .top {
+  width: 600px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.top > h1 {
+  font-size: 46px;
+}
+
+.top p {
+  font-size: 20px !important;
+  font-weight: 300;
+}
+
+.columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px 10px;
+}
+
+.columns > div {
+  width: 600px;
+}
+
+footer {
+  height: 40vh !important;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer > section > a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+  }
+
+  .intro-left > h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .intro-left {
+    text-align: center;
+  }
+
+  .intro-left > p {
+    font-size: 16px;
+    margin-bottom: -15px;
+  }
+
+  .intro-left > button {
+    margin-left: -17%;
+  }
+
+  .intro-left > ol > li {
+    font-size: 18px;
+  }
+
+  .intro-right > img {
+    width: 320px;
+    margin-left: none !important;
+  }
+
+  .top,
+  .about div {
+    width: 96% !important;
+  }
+
+  .top > h1 {
+    font-size: 30px;
+  }
+
+  .top p {
+    font-size: 18px !important;
+    width: 96% !important;
+  }
+
+  .about div > span {
+    top: -60%;
+  }
+}
